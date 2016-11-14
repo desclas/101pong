@@ -22,7 +22,7 @@ y = float(argv[5])
 z = float(argv[6])
 nb = float(argv[7])
 
-    '"''sx = x - x1
+sx = x - x1
 sy = y - y1
 sz = z - z1
 print "The speed vector coordinate are :\n({};{};{})".format(sx, sy, sz)
