@@ -25,12 +25,12 @@ nb = float(argv[7])
 sx = x - x1
 sy = y - y1
 sz = z - z1
-print "The speed vector coordinate are :\n({};{};{})".format(sx, sy, sz)
+print "The speed vector coordinate are :\n({:.2f};{:.2f};{:.2f})".format(sx, sy, sz)
 
 ex = x + sx * nb
 ey = y + sy * nb
 ez = z + sz * nb
-print "At time t+{}, ball coordinates will be :\n({};{};{})".format(nb, ex, ey, ez)
+print "At time t+{:.0f}, ball coordinates will be :\n({:.2f};{:.2f};{:.2f})".format(nb, ex, ey, ez)
 
 if z >= 0 and ez <= 0:
     ns = math.sqrt(math.pow(sx, 2) + math.pow(sy, 2) + math.pow(sz, 2))
