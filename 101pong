@@ -3,15 +3,15 @@ import math
 from sys import *
 
 if len(argv) != 8:
-    quit(84)
+    exit(84)
     
 i = 1
 while i != 8:
     if argv[i][0] == '-':
         if str.isdigit(argv[i][1:]) == False:
-            quit(84)
-        elif argv[i].replace('.','', 1).isdigit() == False:
-            quit(84)
+            exit(84)
+    elif argv[i].replace('.','', 1).isdigit() == False:
+        exit(84)
     i += 1
 
 x1 = float(argv[1])
@@ -25,7 +25,7 @@ nb = float(argv[7])
 sx = x - x1
 sy = y - y1
 sz = z - z1
-print "The speed vector coordinate are :\n({:.2f};{:.2f};{:.2f})".format(sx, sy, sz)
+print "The speed vector coordinates are :\n({:.2f};{:.2f};{:.2f})".format(sx, sy, sz)
 
 ex = x + sx * nb
 ey = y + sy * nb
@@ -46,3 +46,4 @@ elif z <= 0 and ez >= 0:
     print "The incidence angle is :\n{:.2f} degrees".format(sv)
 else:
     print "The ball won't reach the bat."
+exit (0)
