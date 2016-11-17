@@ -2,7 +2,6 @@
 import math
 from sys import *
 
-
 if len(argv) != 8:
     quit(84)
     
@@ -47,4 +46,3 @@ elif z <= 0 and ez >= 0:
     print "The incidence angle is :\n{:.2f} degrees".format(sv)
 else:
     print "The ball won't reach the bat."
-quit(0)
